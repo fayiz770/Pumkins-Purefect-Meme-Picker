@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: rgb(127, 127, 195);
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.main,
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+header {
+    color: white;
+    background-color: var(--brown);
+}
+
+
+.pumpkin {
+    width: 80px;
+}
+
+.main {
+    padding-top: 2em;
+    flex-direction: column;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.emotion-title {
+    text-transform: capitalize;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.emotions {
+    font-weight: normal;
+    display: grid;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.radio,
+.checkbox {
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.checkbox {
+    border-bottom: none;
+}
+
+.submit {
+    padding: 0.5rem;
+    border: none;
+    background: var(--brown);
+    color: white;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #48487c;
+}
+
+label,
+input[type="radio"] {
+    cursor: pointer;
+}
+
+.highlight {
+    background: #9a9aaa;
+}
+
+.modal {
+    display: none; /*flex when displayed*/
+    flex-direction: column;
+    position: fixed;
+    margin: auto;
+    top: 120px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #67595e;
+    border-radius: 5px;
+    width: 390px;
+    height: 510px;
+    background-color: #fff0ee;
+}
+
+.modal-inner {
+    margin: 0  1em;
+}
+
+.image {
+    border-radius: 5px;
+    width: 370px;
+    height: 470px;
+}
+
+.close-button {
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
